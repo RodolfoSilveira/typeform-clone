@@ -1,71 +1,150 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Main /> should render the handing 1`] = `
+exports[`<Main /> should render the elements animated 1`] = `
 .c0 {
-  background-color: #06092b;
-  color: #fff;
+  width: 100%;
+  height: 1610vh;
+}
+
+.c0 .first {
+  background: red;
+  overflow: hidden;
+}
+
+.c0 .first .offset {
   width: 100%;
   height: 100%;
-  padding: 3rem;
-  text-align: center;
+}
+
+.c0 .first .a {
+  background: #f5f1ea;
+  height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-align-items: flex-end;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+}
+
+.c0 .first .a .left-side {
+  width: 50%;
+  height: 100%;
+  background: #7dbb91;
+}
+
+.c0 .first .a .right-side {
+  width: 50%;
+  height: 100%;
+}
+
+.c0 .first .a .right-side .right-image {
+  background: #7dbb91;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 .first .b {
+  background: #582534;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 .first .c {
+  background: #0a7397;
+  width: 100%;
+  height: 100%;
+}
+
+.c0 .second {
+  background: green;
+}
+
+.c0 .third {
+  background: yellow;
+}
+
+.c0 .fourth {
+  background: blue;
 }
 
 .c1 {
-  width: 25rem;
-  margin-bottom: 2rem;
+  position: relative;
 }
 
 .c2 {
-  font-size: 2.5rem;
-}
-
-.c3 {
-  font-size: 2rem;
-  font-weight: 400;
-}
-
-.c4 {
-  margin-top: 3rem;
-  width: min(30rem,100%);
+  height: 100vh;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 <main
   class="c0"
 >
-  <img
-    alt="Imagem de um átomo e React Avançado escrito ao lado."
+  <section
     class="c1"
-    src="/img/logo.svg"
-  />
-  <h1
-    class="c2"
+    style="height: 72.7%;"
   >
-    React Avançado
-  </h1>
-  <h2
-    class="c3"
+    <div
+      class="c2 second"
+    >
+      <div
+        class="c2 first"
+        style="border-radius: 0px; transform: none;"
+      >
+        <div
+          class="offset"
+          style="transform: translateY(0%) translateZ(0);"
+        >
+          <div
+            class="a"
+          >
+            <div
+              class="left-side"
+              style="height: 20vh;"
+            />
+            <div
+              class="right-side"
+            >
+              <div
+                class="right-image"
+                style="transform: translateY(58vh) scale(0) translateZ(0);"
+              />
+            </div>
+          </div>
+          <div
+            class="b"
+          />
+          <div
+            class="c"
+          />
+        </div>
+      </div>
+      <div
+        style="position: absolute; top: 0px; left: 0px; right: 0px; height: 100vh; border: 4px solid #fff; opacity: 0; transform: scale(0.511) translateZ(0);"
+      />
+    </div>
+  </section>
+  <section
+    class="c1"
+    style="height: 9.7%;"
   >
-    Typescript, ReactJS, NextJS e Styled Components
-  </h2>
-  <img
-    alt="Um desenvolvedor de frente para uma tela com código."
-    class="c4"
-    src="/img/hero-illustration.svg"
-  />
+    <div
+      class="c2 third"
+    />
+  </section>
+  <section
+    class="c1"
+    style="height: 10.1%;"
+  >
+    <div
+      class="c2 fourth"
+    />
+  </section>
 </main>
 `;

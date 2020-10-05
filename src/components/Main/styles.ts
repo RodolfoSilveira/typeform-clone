@@ -1,33 +1,70 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
 export const Wrapper = styled.main`
-  background-color: #06092b;
-  color: #fff;
   width: 100%;
-  height: 100%;
-  padding: 3rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 1610vh;
+  .first {
+    background: red;
+    overflow: hidden;
+
+    .offset {
+      width: 100%;
+      height: 100%;
+    }
+
+    .a {
+      background: #f5f1ea;
+      height: 100%;
+      display: flex;
+      align-items: flex-end;
+
+      .left-side {
+        width: 50%;
+        height: 100%;
+        background: #7dbb91;
+      }
+      .right-side {
+        width: 50%;
+        height: 100%;
+
+        .right-image {
+          background: #7dbb91;
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+    .b {
+      background: #582534;
+      width: 100%;
+      height: 100%;
+    }
+    .c {
+      background: #0a7397;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .second {
+    background: green;
+  }
+  .third {
+    background: yellow;
+  }
+  .fourth {
+    background: blue;
+  }
 `
 
-export const Logo = styled.img`
-  width: 25rem;
-  margin-bottom: 2rem;
+export const Section = styled.section`
+  position: relative;
 `
 
-export const Title = styled.h1`
-  font-size: 2.5rem;
-`
-
-export const Description = styled.h2`
-  font-size: 2rem;
-  font-weight: 400;
-`
-
-export const Illustration = styled.img`
-  margin-top: 3rem;
-  width: min(30rem, 100%);
+export const Sticky = styled(motion.div)`
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
 `

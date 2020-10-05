@@ -1,9 +1,14 @@
+import { useEffect } from 'react'
 import { AppProps } from 'next/app'
 import Head from 'next/head'
 
 import GlobalStyles from 'styles/global'
 
 function App({ Component, pageProps }: AppProps) {
+  useEffect(() => {
+    window.scrollTo({ top: 0 })
+  }, [])
+
   return (
     <>
       <Head>
